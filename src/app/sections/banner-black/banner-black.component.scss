@@ -1,0 +1,29 @@
+@import '../..//variables/variables';
+@import '../..//variables/index';
+
+.banner-black {
+    
+    @media only screen and (min-width: 768px) {
+        padding: 0 10%;
+    }
+
+    &__content {
+        padding: 20px;
+        margin: 0;
+        background-color: black;
+
+        @media only screen and (min-width: 768px) {
+            box-shadow: 0px -7px 143px -9px rgba(0,0,0,0.48);
+        }
+    }
+
+    &_item {
+        padding: 10px 0;
+        margin: 5px 0;
+        color: white;
+    }
+
+    .counter {
+        font-size: 1.2em;
+    }
+}

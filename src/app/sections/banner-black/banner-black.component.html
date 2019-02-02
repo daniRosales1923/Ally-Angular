@@ -1,0 +1,26 @@
+<section class="banner-black"  >
+  <div class="banner-black__content" fxLayout="column"  fxLayout.gt-sm="row" fxLayoutAlign="center center" (inViewport)="startCounters()">
+    <div class="banner-black_item" fxLayout="column" fxLayoutAlign="center center" fxFlex.gt-sm="30">
+      <p class="counter" counter [to]="150" [duration]="10">0</p>
+      <p class="item-text">Inside</p>
+      <p class="item__paragraph">Graphics</p>
+    </div>
+    <div class="banner-black_item" fxLayout="column" fxLayoutAlign="center center" fxFlex.gt-sm="30" >
+      <p class="counter" counter [to]="540" [duration]="10">0</p>
+      <p class="item-text">Optimum</p>
+      <p class="item__paragraph">Resolution</p>
+    </div>
+    <div class="banner-black_item" fxLayout="column" fxLayoutAlign="center center" fxFlex.gt-sm="30">
+      <p class="counter" counter [to]="29" [duration]="10">0</p>
+      <p class="item-text">Efficient</p>
+      <p class="item__paragraph" CounterView>Adaptability</p>
+    </div>
+    <div class="banner-black_item" fxLayout="column" fxLayoutAlign="center center" fxFlex.gt-sm="30">
+      <div fxLayout="row" fxFlexAlign="center"  CounterView>
+          <p class="counter" counter [to]="100" [duration]="10">0</p>%
+      </div>
+      <p class="item-text">Greater</p>
+      <p class="item__paragraph">Reability</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,49 @@
+@import '../..//variables/variables';
+@import '../..//variables/index';
+
+.banner-desk{
+    background-color: $white;
+
+    @media only screen and (min-width: 768px) {
+        padding: 0 10%;
+    }
+
+    &__img{
+        min-height:360px;
+        background-image: url(../../../assets/images/desktop.jpg);
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &__content {
+        padding: 20px 10px;
+        margin: 0;
+
+        @media only screen and (min-width: 768px) {
+            padding: 0;
+            box-shadow: 0px -7px 143px -9px rgba(0,0,0,0.48);
+        }
+    }
+
+    &-text {
+        padding: 30px;
+    } 
+
+    &__title {
+        display: inline-block;
+        position: relative;
+        font-size: $title;
+        padding-bottom: 15px;
+        color:$gray;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width:50px;
+            height: 1px;
+            background-color: currentColor;
+            top: 25px;
+        }
+    }
+}

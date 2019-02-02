@@ -1,0 +1,47 @@
+@import '../..//variables/variables';
+@import '../..//variables/index';
+
+.services {
+
+    @media only screen and (min-width: 768px) {
+        padding: 0 10%;
+    }
+
+    &__content {
+        padding: 20px 10px;
+        
+        @media only screen and (min-width: 768px) {
+            box-shadow: 0px -7px 143px -9px rgba(0,0,0,0.48);
+        }
+        
+        &-card{
+            margin: 1px 0;
+        }
+    }
+
+    &-photography, &-desing, &-planning{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 300px;
+        width: 100%;
+        background-position: center center;
+        background-size: cover;
+        color:$white;
+    }
+
+    &-photography {
+        background-image: linear-gradient(to left, rgba(181, 71, 185, 0.911), rgba(21, 24, 212, 0.219)), 
+        url(../../../assets/images/fotografia.jpg);
+    } 
+    
+    &-desing {
+        background-image: linear-gradient(to bottom ,rgba(181, 71, 185, 0.911), rgba(17, 20, 177, 0.678)),
+        url(../../../assets/images/desing.jpg);
+    }
+
+    &-planning {
+        background-image: linear-gradient(to top ,rgba(181, 71, 185, 0.911) , rgba(10, 11, 54, 0.678)), 
+        url(../../../assets/images/planning.jpg);
+    }
+}
